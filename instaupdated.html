@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pakala Chetty Event Management | Tirupati · Chittoor · Vellore · Tamil Nadu</title>
+<meta name="description" content="Premium Event Management in Tirupati, Chittoor, Vellore & Tamil Nadu. Weddings, Receptions, Corporate Events, Catering & more.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9973A;--gold-light:#E8C46A;--gold-dark:#8B6914;--crimson:#8B1A1A;--crimson-light:#B52020;--dark:#0A0704;--dark2:#120E08;--dark3:#1C1610;--cream:#F5EDD8;--cream2:#EAD9B8;--white:#FFFDF7}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--dark);color:var(--cream);font-family:'Montserrat',sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--dark)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 60px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s}
+nav.scrolled{background:rgba(10,7,4,0.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,151,58,0.2)}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.nav-logo-img{width:52px;height:52px;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 18px rgba(201,151,58,0.35);background:linear-gradient(135deg,var(--crimson),var(--crimson-light));display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:18px;font-weight:900;color:var(--gold);flex-shrink:0;overflow:hidden}
+.nav-logo-img img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.nav-logo-text{font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:2px;color:var(--gold-light);line-height:1.3}
+.nav-logo-text span{display:block;font-size:9px;letter-spacing:3px;color:var(--cream2);font-weight:400}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--cream2);text-decoration:none;position:relative;padding-bottom:4px;transition:color 0.3s}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width 0.3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:9px 20px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;cursor:pointer;transition:all 0.3s;white-space:nowrap}
+.nav-cta:hover{background:var(--gold);color:var(--dark)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;flex-shrink:0}
+.hamburger span{width:24px;height:1px;background:var(--gold);display:block;transition:all 0.3s}
+.mobile-nav{display:none;position:fixed;inset:0;z-index:1100;background:rgba(10,7,4,0.99);flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:'Cinzel',serif;font-size:20px;letter-spacing:3px;color:var(--cream2);text-decoration:none;transition:color 0.3s}
+.mobile-nav a:hover{color:var(--gold)}
+.mobile-close{position:absolute;top:20px;right:24px;background:none;border:none;color:var(--gold);font-size:28px;cursor:pointer;line-height:1}
+#hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(139,26,26,0.18) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 80% 80%,rgba(201,151,58,0.09) 0%,transparent 60%),radial-gradient(ellipse 30% 30% at 20% 20%,rgba(201,151,58,0.07) 0%,transparent 60%);background-color:var(--dark)}
+.hero-ornament{position:absolute;width:600px;height:600px;border:1px solid rgba(201,151,58,0.08);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);animation:spinOrn 30s linear infinite}
+.hero-ornament::before{content:'';position:absolute;inset:30px;border:1px solid rgba(201,151,58,0.06);border-radius:50%;animation:spinOrn 20s linear infinite reverse}
+.hero-ornament::after{content:'';position:absolute;inset:60px;border:1px solid rgba(201,151,58,0.04);border-radius:50%}
+@keyframes spinOrn{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.hero-particles{position:absolute;inset:0;overflow:hidden}
+.particle{position:absolute;width:2px;height:2px;background:var(--gold);border-radius:50%;opacity:0;animation:floatP var(--dur,8s) var(--delay,0s) ease-in-out infinite}
+@keyframes floatP{0%{opacity:0;transform:translateY(0) scale(0)}20%{opacity:.8;transform:translateY(-20px) scale(1)}80%{opacity:.4}100%{opacity:0;transform:translateY(-120px) scale(.5)}}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;animation:heroIn 1.2s ease forwards}
+@keyframes heroIn{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+.hero-tag{display:inline-flex;align-items:center;gap:12px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:4px;color:var(--gold);margin-bottom:28px}
+.hero-tag::before,.hero-tag::after{content:'';display:block;width:40px;height:1px;background:var(--gold);opacity:0.6}
+.hero-title{font-family:'Cinzel',serif;font-size:clamp(40px,8vw,100px);font-weight:900;line-height:.92;color:var(--white);margin-bottom:10px}
+.hero-title .gold{color:var(--gold)}
+.hero-title .outline{-webkit-text-stroke:1px var(--gold-light);color:transparent}
+.hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(17px,3vw,28px);font-style:italic;color:var(--cream2);margin:18px 0 44px;letter-spacing:3px}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:linear-gradient(135deg,var(--gold-dark),var(--gold),var(--gold-light));color:var(--dark);padding:15px 40px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;text-decoration:none;position:relative;overflow:hidden;transition:all 0.3s;border:none;cursor:pointer;display:inline-block}
+.btn-primary::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--gold-dark));opacity:0;transition:opacity 0.3s}
+.btn-primary:hover::before{opacity:1}
+.btn-primary span{position:relative;z-index:1}
+.btn-outline{border:1px solid var(--gold);color:var(--gold);padding:15px 40px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;text-decoration:none;transition:all 0.3s;display:inline-block;cursor:pointer;background:transparent}
+.btn-outline:hover{background:rgba(201,151,58,0.12)}
+.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;z-index:2;animation:bounce 2s ease infinite}
+.hero-scroll span{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--gold)}
+.hero-scroll-line{width:1px;height:38px;background:linear-gradient(to bottom,var(--gold),transparent)}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+section{padding:110px 60px;position:relative}
+.section-label{font-family:'Cinzel',serif;font-size:10px;letter-spacing:5px;color:var(--gold);text-align:center;margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:14px}
+.section-label::before,.section-label::after{content:'';display:block;width:50px;height:1px;background:linear-gradient(to right,transparent,var(--gold))}
+.section-label::after{background:linear-gradient(to left,transparent,var(--gold))}
+.section-title{font-family:'Cinzel',serif;font-size:clamp(26px,5vw,54px);font-weight:700;text-align:center;color:var(--white);margin-bottom:18px;line-height:1.1}
+.section-title .gold{color:var(--gold)}
+.section-desc{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--cream2);text-align:center;max-width:620px;margin:0 auto 60px;line-height:1.75;font-style:italic}
+.divider{width:80px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:18px auto 46px}
+#about{background:var(--dark2)}
+.about-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-logo-display{width:260px;height:260px;margin:0 auto;background:linear-gradient(135deg,var(--dark3),var(--dark2));border:1px solid rgba(201,151,58,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 60px rgba(201,151,58,0.1),inset 0 0 40px rgba(139,26,26,0.1)}
+.about-logo-display::before{content:'';position:absolute;inset:-20px;border:1px dashed rgba(201,151,58,0.15);border-radius:50%;animation:spinOrn 25s linear infinite}
+.about-logo-display img{width:180px;height:180px;object-fit:contain;border-radius:50%}
+.about-logo-inner{text-align:center}
+.about-logo-pc{font-family:'Cinzel',serif;font-size:76px;font-weight:900;color:var(--gold);line-height:1;text-shadow:0 0 40px rgba(201,151,58,0.4)}
+.about-logo-name{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:var(--cream2);margin-top:4px}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+.stat-card{background:rgba(201,151,58,0.05);border:1px solid rgba(201,151,58,0.15);padding:18px;text-align:center;transition:all 0.3s}
+.stat-card:hover{background:rgba(201,151,58,0.1);border-color:var(--gold)}
+.stat-number{font-family:'Cinzel',serif;font-size:34px;font-weight:900;color:var(--gold)}
+.stat-label{font-size:9px;letter-spacing:2px;color:var(--cream2);margin-top:4px}
+.about-text h3{font-family:'Cinzel',serif;font-size:12px;letter-spacing:4px;color:var(--gold);margin-bottom:18px}
+.about-text p{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.9;color:var(--cream2);margin-bottom:22px}
+.about-locations{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.location-tag{border:1px solid rgba(201,151,58,0.3);padding:7px 16px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--gold);background:rgba(201,151,58,0.05)}
+#services{background:var(--dark)}
+.services-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.service-card{background:var(--dark2);padding:40px 26px;position:relative;overflow:hidden;transition:all 0.4s}
+.service-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--gold-dark),var(--gold),var(--gold-dark));transform:scaleX(0);transition:transform 0.4s}
+.service-card:hover{background:rgba(28,22,16,0.95);transform:translateY(-4px)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{font-size:30px;margin-bottom:18px;display:block}
+.service-num{position:absolute;top:14px;right:18px;font-family:'Cinzel',serif;font-size:42px;font-weight:900;color:rgba(201,151,58,0.06);line-height:1}
+.service-card h3{font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:var(--white);margin-bottom:10px;letter-spacing:1px}
+.service-card p{font-family:'Cormorant Garamond',serif;font-size:15px;line-height:1.8;color:var(--cream2)}
+#catering{background:var(--dark2)}
+.catering-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:60px}
+.catering-card{background:var(--dark3);border:1px solid rgba(201,151,58,0.12);padding:38px 28px;transition:all 0.4s;position:relative;overflow:hidden}
+.catering-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--gold-dark),var(--gold));transform:scaleX(0);transition:transform 0.4s;transform-origin:left}
+.catering-card:hover{border-color:rgba(201,151,58,0.35);transform:translateY(-4px)}
+.catering-card:hover::after{transform:scaleX(1)}
+.catering-card-icon{font-size:38px;margin-bottom:16px}
+.catering-card h3{font-family:'Cinzel',serif;font-size:14px;color:var(--white);margin-bottom:10px;letter-spacing:1px}
+.catering-card p{font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.8;color:var(--cream2);margin-bottom:14px}
+.catering-card ul{list-style:none;margin-top:8px}
+.catering-card ul li{font-family:'Montserrat',sans-serif;font-size:11px;color:var(--cream2);padding:4px 0;padding-left:16px;position:relative;letter-spacing:.4px}
+.catering-card ul li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:7px;top:5px}
+.menu-showcase{max-width:1100px;margin:0 auto}
+.menu-showcase h3{font-family:'Cinzel',serif;font-size:21px;color:var(--gold);text-align:center;margin-bottom:32px;letter-spacing:2px}
+.menu-tabs{display:flex;justify-content:center;gap:0;margin-bottom:36px;flex-wrap:wrap}
+.menu-tab{padding:10px 26px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;border:1px solid rgba(201,151,58,0.25);background:transparent;color:var(--cream2);cursor:pointer;transition:all 0.3s;margin:2px}
+.menu-tab.active,.menu-tab:hover{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+.menu-panel{display:none}
+.menu-panel.active{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.menu-item{background:var(--dark3);border:1px solid rgba(201,151,58,0.1);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.3s}
+.menu-item:hover{border-color:rgba(201,151,58,0.3)}
+.menu-item-name{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--cream);font-weight:600}
+.menu-item-desc{font-family:'Montserrat',sans-serif;font-size:10px;color:rgba(234,217,184,0.5);margin-top:2px;letter-spacing:.4px}
+.menu-item-veg{font-size:14px}
+
+/* ═══ GALLERY — UNIFORM FIXED HEIGHT ═══ */
+#gallery{background:var(--dark3)}
+.gallery-categories{display:flex;justify-content:center;gap:0;flex-wrap:wrap;margin-bottom:44px}
+.cat-btn{padding:10px 22px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;border:1px solid rgba(201,151,58,0.25);background:transparent;color:var(--cream2);cursor:pointer;transition:all 0.3s;margin:2px}
+.cat-btn.active,.cat-btn:hover{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+.gallery-grid{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+/* All gallery cells are exactly the same fixed height — no tall/wide */
+.gallery-item{
+  position:relative;
+  overflow:hidden;
+  background:var(--dark2);
+  height:260px;       /* ← uniform fixed height for every cell */
+  cursor:pointer;
+}
+.gallery-item img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;   /* ← crop to fill, never stretch */
+  display:block;
+  transition:transform 0.6s;
+}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-placeholder{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:30px;
+  text-align:center;
+}
+.gallery-placeholder .icon{font-size:30px}
+.gallery-placeholder p{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--gold);opacity:.7}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,7,4,0.82) 0%,transparent 60%);opacity:0;transition:opacity 0.4s;display:flex;align-items:flex-end;padding:14px;z-index:2}
+.gallery-item:hover .gallery-overlay{opacity:1}
+.gallery-overlay-text{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:var(--gold)}
+
+.lightbox{display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,0.95);align-items:center;justify-content:center}
+.lightbox.open{display:flex}
+.lightbox-inner{position:relative;max-width:90vw;max-height:90vh;display:flex;align-items:center;justify-content:center}
+.lightbox-img{max-width:90vw;max-height:80vh;object-fit:contain;border:1px solid rgba(201,151,58,0.3)}
+.lightbox-close{position:absolute;top:-40px;right:0;background:none;border:none;color:var(--gold);font-size:30px;cursor:pointer;line-height:1;z-index:9001}
+.lightbox-prev,.lightbox-next{position:fixed;top:50%;transform:translateY(-50%);background:rgba(201,151,58,0.15);border:1px solid rgba(201,151,58,0.3);color:var(--gold);font-size:24px;width:50px;height:50px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s;z-index:9001}
+.lightbox-prev{left:16px}
+.lightbox-next{right:16px}
+.lightbox-prev:hover,.lightbox-next:hover{background:var(--gold);color:var(--dark)}
+.lightbox-caption{position:absolute;bottom:-34px;left:0;right:0;text-align:center;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--gold)}
+
+#videos{background:var(--dark2)}
+.videos-tabs{display:flex;justify-content:center;gap:0;margin-bottom:44px;flex-wrap:wrap}
+.video-tab-btn{padding:10px 28px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;border:1px solid rgba(201,151,58,0.25);background:transparent;color:var(--cream2);cursor:pointer;transition:all 0.3s;margin:2px}
+.video-tab-btn.active,.video-tab-btn:hover{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+.video-panel{display:none}
+.video-panel.active{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1200px;margin:0 auto}
+.video-card{background:var(--dark3);border:1px solid rgba(201,151,58,0.12);overflow:hidden;transition:all 0.4s;position:relative}
+.video-card:hover{border-color:rgba(201,151,58,0.35);transform:translateY(-4px)}
+
+/* Video thumbnail — uniform fixed height */
+.video-thumb{position:relative;cursor:pointer;height:200px;overflow:hidden;background:var(--dark)}
+.video-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.video-thumb-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px}
+.video-thumb-placeholder span{font-size:40px}
+.video-play-btn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,7,4,0.45);transition:background 0.3s}
+.video-thumb:hover .video-play-btn{background:rgba(10,7,4,0.2)}
+.video-play-icon{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gold-dark),var(--gold));display:flex;align-items:center;justify-content:center;font-size:20px;transition:transform 0.3s}
+.video-thumb:hover .video-play-icon{transform:scale(1.12)}
+.video-info{padding:18px 20px}
+.video-info h4{font-family:'Cinzel',serif;font-size:12px;color:var(--white);margin-bottom:6px;letter-spacing:1px}
+.video-info p{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--cream2);line-height:1.6}
+.video-badge{display:inline-block;padding:3px 10px;font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;margin-bottom:8px}
+.video-badge.yt{background:rgba(255,0,0,0.12);border:1px solid rgba(255,80,80,0.3);color:#ff6b6b}
+.video-badge.ig{background:rgba(201,151,58,0.1);border:1px solid rgba(201,151,58,0.3);color:var(--gold)}
+.video-badge.own{background:rgba(201,151,58,0.15);border:1px solid rgba(201,151,58,0.4);color:var(--gold-light)}
+.video-modal{display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,0.95);align-items:center;justify-content:center}
+.video-modal.open{display:flex}
+.video-modal-inner{position:relative;width:90vw;max-width:900px}
+.video-modal-close{position:absolute;top:-44px;right:0;background:none;border:none;color:var(--gold);font-size:30px;cursor:pointer;line-height:1}
+.video-modal-body{position:relative;padding-bottom:56.25%;height:0}
+.video-modal-body iframe,.video-modal-body video{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+#process{background:var(--dark)}
+.process-steps{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.process-steps::before{content:'';position:absolute;top:38px;left:10%;right:10%;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);z-index:0}
+.process-step{text-align:center;padding:0 16px;position:relative;z-index:1}
+.step-circle{width:76px;height:76px;margin:0 auto 18px;background:var(--dark2);border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;position:relative;transition:all 0.3s}
+.step-circle:hover{background:rgba(201,151,58,0.15);box-shadow:0 0 30px rgba(201,151,58,0.3)}
+.step-num{position:absolute;top:-8px;right:-8px;width:24px;height:24px;background:var(--gold);border-radius:50%;font-family:'Cinzel',serif;font-size:11px;font-weight:700;color:var(--dark);display:flex;align-items:center;justify-content:center}
+.process-step h4{font-family:'Cinzel',serif;font-size:12px;letter-spacing:1px;color:var(--white);margin-bottom:8px}
+.process-step p{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--cream2);line-height:1.6}
+#packages{background:var(--dark2)}
+.packages-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.package-card{background:var(--dark3);border:1px solid rgba(201,151,58,0.15);padding:48px 34px;text-align:center;position:relative;transition:all 0.4s;overflow:hidden}
+.package-card.featured{border-color:var(--gold);background:linear-gradient(135deg,var(--dark3),rgba(201,151,58,0.06))}
+.package-card.featured::before{content:'MOST POPULAR';position:absolute;top:16px;right:-32px;background:var(--gold);color:var(--dark);font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;padding:5px 44px;transform:rotate(45deg);transform-origin:right top}
+.package-card:hover{transform:translateY(-6px);box-shadow:0 30px 80px rgba(0,0,0,0.5)}
+.package-icon{font-size:42px;margin-bottom:14px}
+.package-name{font-family:'Cinzel',serif;font-size:20px;font-weight:700;color:var(--gold);margin-bottom:8px}
+.package-subtitle{font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;color:var(--cream2);margin-bottom:28px}
+.package-features{list-style:none;margin-bottom:32px;text-align:left}
+.package-features li{font-family:'Montserrat',sans-serif;font-size:11px;color:var(--cream2);padding:7px 0;border-bottom:1px solid rgba(201,151,58,0.08);display:flex;gap:10px;align-items:flex-start;letter-spacing:.3px}
+.package-features li::before{content:'✦';color:var(--gold);font-size:10px;flex-shrink:0;margin-top:1px}
+.package-cta{width:100%;padding:13px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;cursor:pointer;transition:all 0.3s;border:1px solid var(--gold);background:transparent;color:var(--gold)}
+.package-card.featured .package-cta{background:var(--gold);color:var(--dark)}
+.package-cta:hover{background:var(--gold);color:var(--dark)}
+#testimonials{background:var(--dark3)}
+.testimonials-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testimonial-card{background:var(--dark2);border:1px solid rgba(201,151,58,0.1);padding:34px 26px;position:relative;transition:all 0.4s}
+.testimonial-card:hover{border-color:rgba(201,151,58,0.3)}
+.testimonial-card::before{content:'"';position:absolute;top:14px;left:18px;font-family:'Cormorant Garamond',serif;font-size:68px;line-height:1;color:rgba(201,151,58,0.1)}
+.testimonial-stars{color:var(--gold);font-size:13px;margin-bottom:14px}
+.testimonial-text{font-family:'Cormorant Garamond',serif;font-size:16px;line-height:1.8;color:var(--cream2);font-style:italic;margin-bottom:20px}
+.testimonial-author{display:flex;align-items:center;gap:12px}
+.author-avatar{width:42px;height:42px;background:linear-gradient(135deg,var(--crimson),var(--gold-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:15px;color:var(--cream);flex-shrink:0}
+.author-info h4{font-family:'Cinzel',serif;font-size:11px;letter-spacing:1px;color:var(--white)}
+.author-info p{font-size:10px;color:var(--gold);letter-spacing:1px;margin-top:3px}
+#faq{background:var(--dark2)}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(201,151,58,0.15);overflow:hidden}
+.faq-q{width:100%;background:transparent;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:'Cinzel',serif;font-size:12px;letter-spacing:1px;color:var(--cream);cursor:pointer;text-align:left;transition:color 0.3s}
+.faq-q:hover,.faq-q.open{color:var(--gold)}
+.faq-icon{font-size:18px;color:var(--gold);transition:transform 0.3s;flex-shrink:0;margin-left:16px}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s}
+.faq-a.open{max-height:300px;padding-bottom:18px}
+.faq-a p{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.8;color:var(--cream2)}
+#contact{background:var(--dark)}
+.contact-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.contact-info h3{font-family:'Cinzel',serif;font-size:12px;letter-spacing:4px;color:var(--gold);margin-bottom:26px}
+.contact-items{display:flex;flex-direction:column;gap:22px}
+.contact-item{display:flex;gap:16px;align-items:flex-start}
+.contact-item-icon{width:42px;height:42px;flex-shrink:0;background:rgba(201,151,58,0.1);border:1px solid rgba(201,151,58,0.2);display:flex;align-items:center;justify-content:center;font-size:17px;transition:all 0.3s}
+.contact-item:hover .contact-item-icon{background:var(--gold)}
+.contact-item-text h4{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:5px}
+.contact-item-text p,.contact-item-text a{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--cream2);text-decoration:none;line-height:1.65;transition:color 0.3s}
+.contact-item-text a:hover{color:var(--gold)}
+.contact-form{display:flex;flex-direction:column;gap:13px}
+.form-group{display:flex;flex-direction:column;gap:7px}
+.form-group label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--gold)}
+.form-group input,.form-group textarea,.form-group select{background:var(--dark3);border:1px solid rgba(201,151,58,0.2);padding:12px 15px;color:var(--cream);font-family:'Montserrat',sans-serif;font-size:12px;outline:none;transition:border-color 0.3s;-webkit-appearance:none;width:100%;border-radius:0}
+.form-group select{cursor:pointer}
+.form-group select option{background:var(--dark3)}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(234,217,184,0.3)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.form-submit{background:linear-gradient(135deg,var(--gold-dark),var(--gold));border:none;color:var(--dark);padding:14px 40px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;cursor:pointer;transition:all 0.3s;align-self:flex-start;position:relative;overflow:hidden}
+.form-submit::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold),var(--gold-light));opacity:0;transition:opacity 0.3s}
+.form-submit:hover::before{opacity:1}
+.form-submit span{position:relative}
+footer{background:var(--dark);border-top:1px solid rgba(201,151,58,0.1);padding:60px 60px 36px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:44px;margin-bottom:46px}
+.footer-logo-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.footer-logo-circle{width:42px;height:42px;background:linear-gradient(135deg,var(--crimson),var(--crimson-light));border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:16px;font-weight:900;color:var(--gold);flex-shrink:0;overflow:hidden}
+.footer-logo-circle img{width:100%;height:100%;object-fit:cover}
+.footer-brand-name{font-family:'Cinzel',serif;font-size:15px;font-weight:700;color:var(--gold)}
+.footer-brand-name span{display:block;font-size:9px;letter-spacing:2px;color:var(--cream2);font-weight:400}
+.footer-brand p{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--cream2);line-height:1.75;font-style:italic}
+.footer-col h4{font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;color:var(--gold);margin-bottom:18px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul li a{font-family:'Montserrat',sans-serif;font-size:11px;color:rgba(234,217,184,0.6);text-decoration:none;transition:color 0.3s;letter-spacing:.4px}
+.footer-col ul li a:hover{color:var(--gold)}
+.footer-col ul li{font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(234,217,184,0.6);line-height:1.5}
+.footer-divider{width:100%;height:1px;background:rgba(201,151,58,0.12);margin-bottom:24px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.footer-copy{font-size:10px;color:rgba(234,217,184,0.35);letter-spacing:1px}
+.footer-social{display:flex;gap:12px}
+.social-link{width:34px;height:34px;border:1px solid rgba(201,151,58,0.25);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:13px;text-decoration:none;transition:all 0.3s}
+.social-link:hover{background:var(--gold);color:var(--dark)}
+.float-buttons{position:fixed;bottom:26px;right:22px;z-index:999;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.float-btn-wrap{position:relative;display:flex;align-items:center}
+.float-label{position:absolute;right:64px;background:var(--dark2);border:1px solid rgba(201,151,58,0.3);padding:6px 12px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:1px;color:var(--gold);white-space:nowrap;opacity:0;transition:opacity 0.3s;pointer-events:none}
+.float-btn-wrap:hover .float-label{opacity:1}
+.float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform 0.3s;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.float-btn:hover{transform:scale(1.12)}
+.float-whatsapp{background:#25D366;animation:pulseG 2s ease infinite}
+.float-call{background:linear-gradient(135deg,var(--crimson),var(--crimson-light));animation:pulseR 2s ease 1s infinite}
+@keyframes pulseG{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 40px rgba(37,211,102,0.7)}}
+@keyframes pulseR{0%,100%{box-shadow:0 4px 20px rgba(139,26,26,0.4)}50%{box-shadow:0 4px 40px rgba(181,32,32,0.7)}}
+.float-btn svg{width:26px;height:26px;fill:white}
+.toast{position:fixed;bottom:96px;right:22px;z-index:9999;background:var(--dark2);border:1px solid var(--gold);padding:12px 20px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:1px;color:var(--gold);transform:translateX(200px);opacity:0;transition:all 0.4s}
+.toast.show{transform:translateX(0);opacity:1}
+.reveal{opacity:0;transform:translateY(26px);transition:all 0.75s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-34px);transition:all 0.75s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(34px);transition:all 0.75s ease}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+@media(max-width:1200px){.services-grid{grid-template-columns:repeat(3,1fr)}.footer-top{grid-template-columns:1fr 1fr;gap:32px}.video-panel.active{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1024px){section{padding:90px 38px}nav{padding:13px 38px}.services-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}.process-steps{grid-template-columns:repeat(3,1fr);gap:26px}.process-steps::before{display:none}.packages-grid{grid-template-columns:1fr}.testimonials-wrap{grid-template-columns:repeat(2,1fr)}.catering-grid{grid-template-columns:repeat(2,1fr)}.menu-panel.active{grid-template-columns:1fr}}
+@media(max-width:900px){section{padding:80px 26px}nav{padding:12px 26px}.about-grid{grid-template-columns:1fr;gap:44px}.contact-wrap{grid-template-columns:1fr;gap:42px}.testimonials-wrap{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}.video-panel.active{grid-template-columns:1fr}}
+@media(max-width:768px){section{padding:68px 16px}nav{padding:11px 16px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.services-grid{grid-template-columns:1fr;gap:2px}.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-item{height:200px}.catering-grid{grid-template-columns:1fr}.process-steps{grid-template-columns:1fr 1fr;gap:22px}.form-row{grid-template-columns:1fr}footer{padding:46px 16px 28px}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}.float-buttons{bottom:16px;right:12px}.about-logo-display{width:220px;height:220px}.about-logo-pc{font-size:58px}.hero-ornament{width:300px;height:300px}.hero-ornament::before{inset:20px}.hero-ornament::after{inset:40px}}
+@media(max-width:480px){section{padding:56px 12px}nav{padding:10px 12px}.gallery-grid{grid-template-columns:1fr}.gallery-item{height:220px}.about-stats{grid-template-columns:1fr 1fr}.hero-btns{flex-direction:column;align-items:center}.btn-primary,.btn-outline{width:100%;max-width:270px;text-align:center}.process-steps{grid-template-columns:1fr}.menu-tabs{flex-direction:column;align-items:center}.menu-tab{width:100%;max-width:260px;text-align:center}.cat-btn{padding:8px 12px;font-size:9px}footer{padding:38px 12px 22px}.video-tab-btn{padding:8px 14px;font-size:9px}}
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast"></div>
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+  <button class="lightbox-prev" onclick="lightboxNav(-1)">&#8592;</button>
+  <button class="lightbox-next" onclick="lightboxNav(1)">&#8594;</button>
+</div>
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-inner">
+    <button class="video-modal-close" onclick="closeVideoModal()">✕</button>
+    <div class="video-modal-body" id="videoModalBody"></div>
+  </div>
+</div>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="closeMobileNav()">✕</button>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#services" onclick="closeMobileNav()">Services</a>
+  <a href="#catering" onclick="closeMobileNav()">Catering</a>
+  <a href="#gallery" onclick="closeMobileNav()">Gallery</a>
+  <a href="#videos" onclick="closeMobileNav()">Videos</a>
+  <a href="#packages" onclick="closeMobileNav()">Packages</a>
+  <a href="#testimonials" onclick="closeMobileNav()">Reviews</a>
+  <a href="#faq" onclick="closeMobileNav()">FAQ</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+<div class="float-buttons">
+  <div class="float-btn-wrap">
+    <span class="float-label">Chat on WhatsApp</span>
+    <a href="https://wa.me/919885788881" target="_blank" class="float-btn float-whatsapp">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+  <div class="float-btn-wrap">
+    <span class="float-label">Call Us Now</span>
+    <a href="tel:+919885788881" class="float-btn float-call">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+  </div>
+</div>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-img">PC</div>
+    <div class="nav-logo-text">Pakala Chetty<span>Event Management</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#catering">Catering</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#videos">Videos</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Now</button>
+  <button class="hamburger" onclick="openMobileNav()"><span></span><span></span><span></span></button>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ornament"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Tirupati · Chittoor · Vellore · Tamil Nadu</div>
+    <h1 class="hero-title"><span class="gold">Pakala</span><br><span class="outline">Chetty</span></h1>
+    <p class="hero-subtitle">Crafting Unforgettable Celebrations Across South India</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary"><span>✨ Book Your Event</span></a>
+      <a href="#gallery" class="btn-outline">View Gallery</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
+</section>
+
+<section id="about">
+  <div class="section-label">Our Story</div>
+  <h2 class="section-title">About <span class="gold">Us</span></h2>
+  <div class="divider"></div>
+  <div class="about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-logo-display">
+        <div class="about-logo-inner">
+          <div class="about-logo-pc">PC</div>
+          <div class="about-logo-name">Event Management</div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card reveal"><div class="stat-number">700+</div><div class="stat-label">Events Done</div></div>
+        <div class="stat-card reveal"><div class="stat-number">10+</div><div class="stat-label">Years Experience</div></div>
+        <div class="stat-card reveal"><div class="stat-number">4+</div><div class="stat-label">Regions Covered</div></div>
+        <div class="stat-card reveal"><div class="stat-number">100%</div><div class="stat-label">Client Satisfaction</div></div>
+      </div>
+    </div>
+    <div class="about-text reveal-right">
+      <h3>Managing Director — R. Lokesh Kumar</h3>
+      <p>Pakala Chetty Event Management is your all-in-one premium partner for creating extraordinary moments. With over a decade of experience, we bring world-class event planning, décor, catering, and coordination to Tirupati, Chittoor, Vellore, and across Tamil Nadu.</p>
+      <p>From grand traditional weddings and lavish receptions to corporate galas, milestone birthdays, and cultural events — our team orchestrates every detail with unmatched precision, creativity, and heartfelt passion. We don't just plan events; we craft lifelong memories.</p>
+      <div class="about-locations">
+        <div class="location-tag">📍 Tirupati</div>
+        <div class="location-tag">📍 Chittoor</div>
+        <div class="location-tag">📍 Vellore</div>
+        <div class="location-tag">📍 Tamil Nadu</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-label">What We Offer</div>
+  <h2 class="section-title">Our <span class="gold">Services</span></h2>
+  <div class="divider"></div>
+  <p class="section-desc">End-to-end event management — we handle everything so you can enjoy every moment.</p>
+  <div class="services-grid">
+    <div class="service-card reveal"><div class="service-num">01</div><span class="service-icon">💍</span><h3>Wedding Ceremonies</h3><p>Grand traditional & contemporary weddings with exquisite décor, floral mandaps, lighting, and flawless coordination.</p></div>
+    <div class="service-card reveal"><div class="service-num">02</div><span class="service-icon">🎊</span><h3>Receptions</h3><p>Elegant reception setups with premium stage design, lighting effects, entertainment, and full catering management.</p></div>
+    <div class="service-card reveal"><div class="service-num">03</div><span class="service-icon">🍽️</span><h3>Catering Services</h3><p>Full catering solutions — multi-cuisine menus, live counters, buffets, and professional service staff for all event types.</p></div>
+    <div class="service-card reveal"><div class="service-num">04</div><span class="service-icon">🏢</span><h3>Corporate Events</h3><p>Conferences, product launches, award nights, and annual days executed with corporate-grade precision and style.</p></div>
+    <div class="service-card reveal"><div class="service-num">05</div><span class="service-icon">🎂</span><h3>Birthdays & Milestones</h3><p>Bespoke birthday parties, anniversaries, naming ceremonies, and milestone celebrations tailored to your style.</p></div>
+    <div class="service-card reveal"><div class="service-num">06</div><span class="service-icon">🌸</span><h3>Floral & Décor Design</h3><p>Luxurious floral installations, thematic concepts, mandap design, and stage backdrops that transform venues into magic.</p></div>
+    <div class="service-card reveal"><div class="service-num">07</div><span class="service-icon">📸</span><h3>Photography & Media</h3><p>Professional photography, cinematic videography, drone coverage, and live streaming to capture every precious moment.</p></div>
+    <div class="service-card reveal"><div class="service-num">08</div><span class="service-icon">🎵</span><h3>Entertainment</h3><p>DJ setups, live bands, cultural performers, emcees, choreography teams, and sound & light show management.</p></div>
+    <div class="service-card reveal"><div class="service-num">09</div><span class="service-icon">🚗</span><h3>Guest Logistics</h3><p>Guest transport coordination, hotel accommodation tie-ups, invitation management, and RSVP tracking.</p></div>
+    <div class="service-card reveal"><div class="service-num">10</div><span class="service-icon">🏕️</span><h3>Outdoor & Destination</h3><p>Outdoor garden parties, resort events, destination weddings, and tent-based venue setups across the region.</p></div>
+    <div class="service-card reveal"><div class="service-num">11</div><span class="service-icon">🎁</span><h3>Return Gifts & Favours</h3><p>Curated return gift hampers, custom favour boxes, and personalised keepsake coordination for your guests.</p></div>
+    <div class="service-card reveal"><div class="service-num">12</div><span class="service-icon">🕯️</span><h3>Mehendi & Pre-Events</h3><p>Mehendi nights, haldi ceremonies, sangeet programmes, baby showers, and engagement parties planned to perfection.</p></div>
+  </div>
+</section>
+
+<section id="catering">
+  <div class="section-label">Food & Hospitality</div>
+  <h2 class="section-title">Catering <span class="gold">Excellence</span></h2>
+  <div class="divider"></div>
+  <p class="section-desc">Exceptional cuisine crafted for every palate — from traditional Andhra feasts to multi-cuisine spreads.</p>
+  <div class="catering-grid">
+    <div class="catering-card reveal"><div class="catering-card-icon">🍛</div><h3>Traditional South Indian</h3><p>Authentic Andhra, Telangana, and Tamil Nadu cuisine served with love and tradition.</p><ul><li>Full wedding feast on banana leaf</li><li>Sambar, rasam & multiple curries</li><li>Sweets — Payasam, Halwa, Laddu</li><li>Curd rice & pickle assortments</li><li>Papad, pickles & chutneys</li></ul></div>
+    <div class="catering-card reveal"><div class="catering-card-icon">🍲</div><h3>North Indian Cuisine</h3><p>Rich and aromatic North Indian delicacies that add a festive flair to every celebration.</p><ul><li>Paneer & vegetable gravies</li><li>Dal Makhani, Palak Paneer</li><li>Tandoori & Roti varieties</li><li>Biryani — Dum & Hyderabadi</li><li>Gulab Jamun & Kheer</li></ul></div>
+    <div class="catering-card reveal"><div class="catering-card-icon">🍱</div><h3>Live Counters & Stalls</h3><p>Interactive live food stations that entertain guests while serving fresh, hot dishes.</p><ul><li>Dosa & Idli live station</li><li>Chaat & Pani Puri counter</li><li>Pasta & Chinese live stall</li><li>Ice cream & dessert bar</li><li>Juice & mocktail counter</li></ul></div>
+    <div class="catering-card reveal"><div class="catering-card-icon">🥗</div><h3>Special Diet Menus</h3><p>Inclusive menus for every dietary requirement — ensuring all your guests are delighted.</p><ul><li>Pure vegetarian menus</li><li>Jain-friendly options</li><li>Diabetic-friendly dishes</li><li>Low-calorie healthy spreads</li><li>Children's special menu</li></ul></div>
+    <div class="catering-card reveal"><div class="catering-card-icon">🎂</div><h3>Sweets & Bakery</h3><p>Traditional and modern confectionery — from festive sweets to custom celebration cakes.</p><ul><li>Custom wedding & birthday cakes</li><li>Traditional Andhra sweets</li><li>Mithai assortment trays</li><li>Themed cakes & truffle towers</li><li>Chocolate & dessert spreads</li></ul></div>
+    <div class="catering-card reveal"><div class="catering-card-icon">🥂</div><h3>Beverages & Service</h3><p>Premium beverage service with trained hospitality staff to serve your guests with grace.</p><ul><li>Fresh juice & mocktail stations</li><li>Filter coffee & tea service</li><li>Welcome drinks for guests</li><li>Uniformed service staff</li><li>Crockery & linen included</li></ul></div>
+  </div>
+  <div class="menu-showcase reveal">
+    <h3>Sample Menu Showcase</h3>
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick="switchMenu('breakfast',this)">Breakfast</button>
+      <button class="menu-tab" onclick="switchMenu('lunch',this)">Lunch / Feast</button>
+      <button class="menu-tab" onclick="switchMenu('snacks',this)">Snacks</button>
+      <button class="menu-tab" onclick="switchMenu('dinner',this)">Dinner</button>
+      <button class="menu-tab" onclick="switchMenu('sweets',this)">Sweets</button>
+    </div>
+    <div class="menu-panel active" id="menu-breakfast">
+      <div class="menu-item"><div><div class="menu-item-name">Idli Sambar</div><div class="menu-item-desc">Soft rice cakes with fresh sambar & chutneys</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Masala Dosa</div><div class="menu-item-desc">Crispy dosa with potato masala filling</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Pongal</div><div class="menu-item-desc">Ven pongal with pepper & ghee</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Upma</div><div class="menu-item-desc">Semolina upma with vegetables</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Medu Vada</div><div class="menu-item-desc">Crispy vada with sambar & coconut chutney</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Filter Coffee</div><div class="menu-item-desc">Traditional South Indian filter coffee</div></div><span class="menu-item-veg">🟢</span></div>
+    </div>
+    <div class="menu-panel" id="menu-lunch">
+      <div class="menu-item"><div><div class="menu-item-name">Steamed Rice</div><div class="menu-item-desc">Fine boiled rice — the feast foundation</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Sambar</div><div class="menu-item-desc">Lentil-based tamarind sambar with vegetables</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Rasam</div><div class="menu-item-desc">Peppery tamarind rasam</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Kootu & Poriyal</div><div class="menu-item-desc">Dry & gravy vegetable preparations</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Biryani</div><div class="menu-item-desc">Dum biryani — veg or non-veg</div></div><span class="menu-item-veg">🟡</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Curd Rice</div><div class="menu-item-desc">Seasoned curd rice with pickle</div></div><span class="menu-item-veg">🟢</span></div>
+    </div>
+    <div class="menu-panel" id="menu-snacks">
+      <div class="menu-item"><div><div class="menu-item-name">Bajji & Bonda</div><div class="menu-item-desc">Deep fried snacks served hot</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Samosa</div><div class="menu-item-desc">Crispy pastry with spiced potato filling</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Pani Puri</div><div class="menu-item-desc">Live chaat counter with tamarind water</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Spring Rolls</div><div class="menu-item-desc">Crispy rolls with vegetable stuffing</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Mini Dosa</div><div class="menu-item-desc">Cocktail dosas at live station</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Fresh Juice</div><div class="menu-item-desc">Seasonal fruit juices & tender coconut</div></div><span class="menu-item-veg">🟢</span></div>
+    </div>
+    <div class="menu-panel" id="menu-dinner">
+      <div class="menu-item"><div><div class="menu-item-name">Paneer Butter Masala</div><div class="menu-item-desc">Rich tomato-based paneer gravy</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Dal Tadka</div><div class="menu-item-desc">Yellow dal with aromatic tempering</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Naan & Roti</div><div class="menu-item-desc">Soft tandoor breads with butter</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Chicken Curry</div><div class="menu-item-desc">Andhra style spicy chicken gravy</div></div><span class="menu-item-veg">🔴</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Vegetable Pulao</div><div class="menu-item-desc">Fragrant vegetable rice pilaf</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Raita & Salad</div><div class="menu-item-desc">Cucumber raita & seasonal salad</div></div><span class="menu-item-veg">🟢</span></div>
+    </div>
+    <div class="menu-panel" id="menu-sweets">
+      <div class="menu-item"><div><div class="menu-item-name">Payasam</div><div class="menu-item-desc">Rice or vermicelli payasam with cardamom</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Gulab Jamun</div><div class="menu-item-desc">Soft milk-solid balls in rose syrup</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Halwa</div><div class="menu-item-desc">Sooji / carrot halwa with dry fruits</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Laddu</div><div class="menu-item-desc">Besan laddu — traditional Telugu style</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Ice Cream</div><div class="menu-item-desc">Assorted scoops — 4 flavours</div></div><span class="menu-item-veg">🟢</span></div>
+      <div class="menu-item"><div><div class="menu-item-name">Kheer</div><div class="menu-item-desc">Creamy milk kheer with saffron</div></div><span class="menu-item-veg">🟢</span></div>
+    </div>
+    <p style="text-align:center;margin-top:20px;font-family:'Cormorant Garamond',serif;font-size:15px;color:rgba(234,217,184,0.45);font-style:italic">🟢 Veg &nbsp;|&nbsp; 🟡 Veg/Non-Veg &nbsp;|&nbsp; 🔴 Non-Veg &nbsp;·&nbsp; Custom menus available on request</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-label">Our Portfolio</div>
+  <h2 class="section-title">Event <span class="gold">Gallery</span></h2>
+  <div class="divider"></div>
+  <p class="section-desc">A glimpse into the extraordinary events we've brought to life across South India.</p>
+  <div class="gallery-categories">
+    <button class="cat-btn active" onclick="showCat('all',this)">All Events</button>
+    <button class="cat-btn" onclick="showCat('wedding',this)">💍 Weddings</button>
+    <button class="cat-btn" onclick="showCat('reception',this)">🎊 Receptions</button>
+    <button class="cat-btn" onclick="showCat('birthday',this)">🎂 Birthdays</button>
+    <button class="cat-btn" onclick="showCat('corporate',this)">🏢 Corporate</button>
+    <button class="cat-btn" onclick="showCat('catering',this)">🍽️ Catering</button>
+    <button class="cat-btn" onclick="showCat('decor',this)">🌸 Décor</button>
+  </div>
+  <div id="galleryMount"></div>
+</section>
+
+<section id="videos">
+  <div class="section-label">Watch & Relive</div>
+  <h2 class="section-title">Event <span class="gold">Videos</span></h2>
+  <div class="divider"></div>
+  <p class="section-desc">Watch highlights from our most unforgettable celebrations.</p>
+  <div class="videos-tabs">
+    <button class="video-tab-btn active" onclick="switchVideoTab('all',this)">All Videos</button>
+    <button class="video-tab-btn" onclick="switchVideoTab('wedding',this)">💍 Weddings</button>
+    <button class="video-tab-btn" onclick="switchVideoTab('reception',this)">🎊 Receptions</button>
+    <button class="video-tab-btn" onclick="switchVideoTab('birthday',this)">🎂 Birthdays</button>
+    <button class="video-tab-btn" onclick="switchVideoTab('corporate',this)">🏢 Corporate</button>
+  </div>
+  <div id="videoMount"></div>
+</section>
+
+<section id="process">
+  <div class="section-label">Our Process</div>
+  <h2 class="section-title">How We <span class="gold">Work</span></h2>
+  <div class="divider"></div>
+  <p class="section-desc">A seamless journey from first call to final celebration — we're with you at every step.</p>
+  <div class="process-steps">
+    <div class="process-step reveal"><div class="step-circle">📞<div class="step-num">1</div></div><h4>Consultation</h4><p>Free initial discussion to understand your vision, budget, and requirements.</p></div>
+    <div class="process-step reveal"><div class="step-circle">📋<div class="step-num">2</div></div><h4>Planning</h4><p>Detailed event plan with timeline, vendor list, décor concepts & menu selection.</p></div>
+    <div class="process-step reveal"><div class="step-circle">🎨<div class="step-num">3</div></div><h4>Design</h4><p>Custom mood boards, stage designs, floral concepts, and table layouts for approval.</p></div>
+    <div class="process-step reveal"><div class="step-circle">⚙️<div class="step-num">4</div></div><h4>Execution</h4><p>Our on-ground team sets up everything flawlessly — décor, catering, AV & more.</p></div>
+    <div class="process-step reveal"><div class="step-circle">🎉<div class="step-num">5</div></div><h4>Celebration</h4><p>You enjoy your special day while we handle every detail behind the scenes.</p></div>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="section-label">Pricing</div>
+  <h2 class="section-title">Event <span class="gold">Packages</span></h2>
+  <div class="divider"></div>
+  <p class="section-desc">Flexible packages designed to give you the best experience at every budget.</p>
+  <div class="packages-grid">
+    <div class="package-card reveal">
+      <div class="package-icon">🌟</div><div class="package-name">Silver</div><div class="package-subtitle">Essential Celebrations</div>
+      <ul class="package-features">
+        <li>Basic Stage & Backdrop Design</li><li>Floral Décor — Entrance & Stage</li><li>Basic Lighting Setup</li>
+        <li>Catering for up to 200 Guests</li><li>1 Buffet Spread (Veg)</li><li>Event Coordinator on Site</li>
+        <li>Basic Sound System</li><li>4-Hour Event Coverage</li>
+      </ul>
+      <button class="package-cta" onclick="enquirePackage('Silver')">Enquire Now</button>
+    </div>
+    <div class="package-card featured reveal">
+      <div class="package-icon">👑</div><div class="package-name">Gold</div><div class="package-subtitle">Premium Events</div>
+      <ul class="package-features">
+        <li>Premium Stage & Theme Décor</li><li>Full Floral Design — Venue-Wide</li><li>Professional Lighting & DJ</li>
+        <li>Catering for up to 500 Guests</li><li>Multi-Cuisine Buffet + Live Counters</li><li>Photography & Videography</li>
+        <li>Dedicated Event Manager</li><li>Welcome Drinks & Hospitality Staff</li><li>Return Gift Coordination</li>
+      </ul>
+      <button class="package-cta" onclick="enquirePackage('Gold')">Enquire Now</button>
+    </div>
+    <div class="package-card reveal">
+      <div class="package-icon">💎</div><div class="package-name">Platinum</div><div class="package-subtitle">Royal Celebrations</div>
+      <ul class="package-features">
+        <li>Luxury Themed Décor — Full Venue</li><li>Exclusive Floral & Draping Design</li><li>Drone + Cinema-Grade Photography</li>
+        <li>Catering for 500+ Guests</li><li>Multi-Cuisine + Midnight Snacks</li><li>Live Entertainment & Performers</li>
+        <li>Guest Transport Coordination</li><li>Hotel Tie-up for Outstation Guests</li><li>Custom Invitation Design</li>
+        <li>Full Pre-Event Planning Support</li>
+      </ul>
+      <button class="package-cta" onclick="enquirePackage('Platinum')">Enquire Now</button>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="section-label">What They Say</div>
+  <h2 class="section-title">Client <span class="gold">Reviews</span></h2>
+  <div class="divider"></div>
+  <div class="testimonials-wrap">
+    <div class="testimonial-card reveal"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Pakala Chetty made our wedding absolutely magical. Every detail was perfect — from the floral mandap to the catering. The food was outstanding and guests are still talking about it!"</p><div class="testimonial-author"><div class="author-avatar">P</div><div class="author-info"><h4>Priya Reddy</h4><p>Wedding — Tirupati</p></div></div></div>
+    <div class="testimonial-card reveal"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Our corporate annual day was a grand success. Flawless execution, stunning stage, professional catering, and an extremely dedicated team. Lokesh sir was available at every step!"</p><div class="testimonial-author"><div class="author-avatar">R</div><div class="author-info"><h4>Ramesh Sharma</h4><p>Corporate Event — Vellore</p></div></div></div>
+    <div class="testimonial-card reveal"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Breathtaking birthday celebration for my mother's 60th. The décor, live food stations, and the cake were all beyond expectations. Highly recommended for Tamil Nadu events!"</p><div class="testimonial-author"><div class="author-avatar">A</div><div class="author-info"><h4>Ananya Krishnan</h4><p>Birthday — Chennai, Tamil Nadu</p></div></div></div>
+    <div class="testimonial-card reveal"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"The catering was exceptional — banana leaf feast for 800 guests and not a single complaint! The service staff was polished and professional. Will book again for my daughter's wedding."</p><div class="testimonial-author"><div class="author-avatar">S</div><div class="author-info"><h4>Suresh Naidu</h4><p>Wedding Feast — Chittoor</p></div></div></div>
+    <div class="testimonial-card reveal"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Our product launch event at Vellore was impeccably organised. The stage setup, AV systems, catering, and crowd management were all handled without a single hitch. 10/10!"</p><div class="testimonial-author"><div class="author-avatar">K</div><div class="author-info"><h4>Kavitha Menon</h4><p>Product Launch — Vellore</p></div></div></div>
+    <div class="testimonial-card reveal"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"From mehendi to reception — Pakala Chetty handled our 4-day wedding celebrations flawlessly. The floral décor was breathtaking and the food was the highlight of the entire celebration!"</p><div class="testimonial-author"><div class="author-avatar">M</div><div class="author-info"><h4>Meenakshi Iyer</h4><p>4-Day Wedding — Tamil Nadu</p></div></div></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="section-label">Common Questions</div>
+  <h2 class="section-title">Frequently Asked <span class="gold">Questions</span></h2>
+  <div class="divider"></div>
+  <div class="faq-wrap">
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you handle events across Tamil Nadu? <span class="faq-icon">+</span></button><div class="faq-a"><p>Yes! We serve Tirupati, Chittoor, Vellore and all across Tamil Nadu including Chennai, Coimbatore, Salem, Madurai, and surrounding districts. We travel to your venue — contact us for details.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you provide complete catering services? <span class="faq-icon">+</span></button><div class="faq-a"><p>Absolutely. We provide full catering solutions including traditional South Indian feasts, North Indian cuisine, live food counters, sweets, desserts, beverages, and trained service staff. We handle everything from menu planning to cleanup.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How far in advance should I book? <span class="faq-icon">+</span></button><div class="faq-a"><p>We recommend booking at least 3–6 months in advance for weddings, and 4–8 weeks for corporate events or birthdays. However, we also accommodate last-minute bookings based on availability — call us to check!</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is your minimum guest count for catering? <span class="faq-icon">+</span></button><div class="faq-a"><p>We cater for as few as 50 guests for intimate events all the way up to 5,000+ guests for large weddings and public events. Pricing scales accordingly — contact us for a custom catering quote.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can you work with my own venue? <span class="faq-icon">+</span></button><div class="faq-a"><p>Yes! We work at any venue of your choice — function halls, resorts, open grounds, hotels, or heritage spaces. We have tie-ups with popular venues across Tirupati, Chittoor, Vellore, and Tamil Nadu.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you offer photography and videography? <span class="faq-icon">+</span></button><div class="faq-a"><p>Yes — we offer professional photography, cinematic videography, drone aerial footage, and live streaming as part of our media packages. These can be included in your event package or booked separately.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is there a booking advance / deposit required? <span class="faq-icon">+</span></button><div class="faq-a"><p>We require a small advance deposit to confirm your booking and begin planning. The amount depends on the package and event size. We offer flexible payment terms — discuss with our team during consultation.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you provide a dedicated event manager on the day? <span class="faq-icon">+</span></button><div class="faq-a"><p>Yes. Every event comes with a dedicated on-site event coordinator who ensures everything runs smoothly from setup to teardown. You can enjoy your celebration without worrying about logistics.</p></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label">Get In Touch</div>
+  <h2 class="section-title">Book Your <span class="gold">Event</span></h2>
+  <div class="divider"></div>
+  <div class="contact-wrap">
+    <div class="contact-info reveal-left">
+      <h3>Contact Details</h3>
+      <div class="contact-items">
+        <div class="contact-item"><div class="contact-item-icon">📞</div><div class="contact-item-text"><h4>Phone / WhatsApp</h4><a href="tel:+919885788881">+91 98857 88881</a><br><a href="tel:+919885298852">+91 98852 98852</a><br><a href="tel:+919885298998">+91 98852 98998</a></div></div>
+        <div class="contact-item"><div class="contact-item-icon">✉️</div><div class="contact-item-text"><h4>Email</h4><a href="mailto:pakalachetty.ctr@gmail.com">pakalachetty.ctr@gmail.com</a></div></div>
+        <div class="contact-item"><div class="contact-item-icon">📍</div><div class="contact-item-text"><h4>Office — Chittoor</h4><p># 11-249, Bazaar St., Chittoor, A.P. 517 001</p></div></div>
+        <div class="contact-item"><div class="contact-item-icon">📍</div><div class="contact-item-text"><h4>Office — Tirupati</h4><p># 19, 4-8A, Subbarao St., Near Passport Office, Ashok Nagar, Tirupati, A.P. 517 501</p></div></div>
+        <div class="contact-item"><div class="contact-item-icon">🌐</div><div class="contact-item-text"><h4>Serving Cities</h4><p>Tirupati · Chittoor · Vellore · Tamil Nadu</p></div></div>
+      </div>
+    </div>
+    <div class="contact-form reveal-right">
+      <div class="form-row">
+        <div class="form-group"><label>Your Name *</label><input type="text" id="f-name" placeholder="Full Name"></div>
+        <div class="form-group"><label>Phone Number *</label><input type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX"></div>
+      </div>
+      <div class="form-group"><label>Email Address</label><input type="email" id="f-email" placeholder="your@email.com"></div>
+      <div class="form-row">
+        <div class="form-group"><label>Event Type *</label>
+          <select id="f-event">
+            <option value="">Select Event Type</option>
+            <option>Wedding Ceremony</option><option>Reception</option><option>Corporate Event</option>
+            <option>Birthday Party</option><option>Anniversary</option><option>Naming Ceremony</option>
+            <option>Mehendi / Pre-Events</option><option>Outdoor / Destination Event</option>
+            <option>Catering Only</option><option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Event Date</label><input type="date" id="f-date"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Event City *</label>
+          <select id="f-city">
+            <option value="">Select City</option>
+            <option>Tirupati</option><option>Chittoor</option><option>Vellore</option>
+            <option>Chennai</option><option>Coimbatore</option><option>Salem</option>
+            <option>Madurai</option><option>Other (Tamil Nadu)</option><option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Expected Guests</label>
+          <select id="f-guests">
+            <option value="">Approx. Guest Count</option>
+            <option>Below 100</option><option>100 – 250</option><option>250 – 500</option>
+            <option>500 – 1000</option><option>1000+</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label>Package Interest</label>
+        <select id="f-package">
+          <option value="">Select a Package</option>
+          <option>Silver Package</option><option>Gold Package</option>
+          <option>Platinum Package</option><option>Custom / Not Sure Yet</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Tell Us About Your Dream Event</label><textarea id="f-msg" placeholder="Describe your vision, theme ideas, special requirements, budget range..."></textarea></div>
+      <button class="form-submit" onclick="submitToWhatsApp()"><span>✨ Send Enquiry via WhatsApp</span></button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="footer-logo-circle">PC</div>
+          <div class="footer-brand-name">Pakala Chetty<span>Event Management</span></div>
+        </div>
+        <p>Crafting extraordinary moments across Tirupati, Chittoor, Vellore & Tamil Nadu. Your celebration, our passion.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li>
+          <li><a href="#catering">Catering</a></li><li><a href="#gallery">Gallery</a></li>
+          <li><a href="#videos">Videos</a></li><li><a href="#packages">Packages</a></li>
+          <li><a href="#testimonials">Reviews</a></li><li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li>Wedding Ceremonies</li><li>Receptions</li><li>Full Catering</li>
+          <li>Corporate Events</li><li>Birthdays & Milestones</li>
+          <li>Photography & Media</li><li>Floral & Décor</li><li>Entertainment</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919885788881">+91 98857 88881</a></li>
+          <li><a href="tel:+919885298852">+91 98852 98852</a></li>
+          <li><a href="mailto:pakalachetty.ctr@gmail.com">pakalachetty.ctr@gmail.com</a></li>
+          <li>Chittoor, A.P. 517 001</li><li>Tirupati, A.P. 517 501</li><li>Vellore, Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Pakala Chetty Event Management · Managing Director: R. Lokesh Kumar · All Rights Reserved</p>
+      <div class="footer-social">
+        <a href="https://wa.me/919885788881" target="_blank" class="social-link" title="WhatsApp">💬</a>
+        <a href="tel:+919885788881" class="social-link" title="Call">📞</a>
+        <a href="mailto:pakalachetty.ctr@gmail.com" class="social-link" title="Email">✉️</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════
+   GALLERY DATA
+   ───────────────────────────────────────────────────────────────────
+   HOW TO ADD IMAGES:
+   Just put the filename (e.g. 'photo.jpg') in the src field.
+   Place the image file in the same folder as this HTML file.
+   Leave src:'' if you don't have a photo yet — a placeholder shows.
+
+   { src: 'your-photo.jpg', caption: 'Caption Text', icon: '💐' }
+
+   NOTE: tall/wide options are REMOVED — all images are now the same
+   uniform height for a clean, consistent grid look.
+═══════════════════════════════════════════════════════════════════ */
+const galleryData = {
+  all: [
+    { src: 'Dr.jpeg',  caption: 'Wedding Ceremony',  icon: '💐' },
+    { src: '',         caption: 'Grand Reception',    icon: '✨' },
+    { src: '',         caption: 'Catering Setup',     icon: '🍽️' },
+    { src: '',         caption: 'Stage Design',       icon: '🏛️' },
+    { src: '',         caption: 'Birthday Gala',      icon: '🎂' },
+    { src: '',         caption: 'Corporate Night',    icon: '🏢' },
+    { src: '',         caption: 'Couple Portrait',    icon: '💑' },
+    { src: '',         caption: 'Floral Décor',       icon: '🌸' },
+  ],
+  wedding: [
+    { src: 'Dr.jpeg',  caption: 'Bridal Entry',       icon: '💍' },
+    { src: '',         caption: 'Wedding Mandap',     icon: '🌺' },
+    { src: '',         caption: 'Ceremony',           icon: '💒' },
+    { src: '',         caption: 'Bridal Décor',       icon: '💐' },
+    { src: '',         caption: 'Couple Portraits',   icon: '💑' },
+    { src: '',         caption: 'Sangeet Night',      icon: '🕯️' },
+    { src: '',         caption: 'Mehendi',            icon: '🌸' },
+  ],
+  reception: [
+    { src: '',         caption: 'Grand Reception',    icon: '✨' },
+    { src: '',         caption: 'Reception Stage',    icon: '🎊' },
+    { src: '',         caption: 'Light Show',         icon: '🌟' },
+    { src: '',         caption: 'Dining Setup',       icon: '🥂' },
+    { src: '',         caption: 'Entertainment',      icon: '🎤' },
+    { src: '',         caption: 'Fireworks',          icon: '🎆' },
+  ],
+  birthday: [
+    { src: '',         caption: 'Birthday Stage',     icon: '🎂' },
+    { src: '',         caption: 'Balloon Décor',      icon: '🎈' },
+    { src: '',         caption: 'Theme Party',        icon: '🎁' },
+    { src: '',         caption: 'Cake Ceremony',      icon: '🍰' },
+    { src: '',         caption: 'Anniversary',        icon: '🎉' },
+    { src: '',         caption: 'Naming Ceremony',    icon: '👶' },
+  ],
+  corporate: [
+    { src: '',         caption: 'Corporate Gala',     icon: '🏢' },
+    { src: '',         caption: 'Award Night',        icon: '🎖️' },
+    { src: '',         caption: 'Product Launch',     icon: '🚀' },
+    { src: '',         caption: 'Conference',         icon: '📊' },
+    { src: '',         caption: 'Networking',         icon: '🤝' },
+    { src: '',         caption: 'Inauguration',       icon: '🎗️' },
+  ],
+  catering: [
+    { src: '',         caption: 'Grand Buffet',       icon: '🍽️' },
+    { src: '',         caption: 'Traditional Feast',  icon: '🍛' },
+    { src: '',         caption: 'Live Counter',       icon: '🥘' },
+    { src: '',         caption: 'Wedding Cake',       icon: '🎂' },
+    { src: '',         caption: 'Dessert Station',    icon: '🍰' },
+    { src: '',         caption: 'Beverages',          icon: '🥂' },
+  ],
+  decor: [
+    { src: '',         caption: 'Floral Wall',        icon: '🌸' },
+    { src: '',         caption: 'Stage Backdrop',     icon: '🏛️' },
+    { src: '',         caption: 'Lighting Setup',     icon: '💡' },
+    { src: '',         caption: 'Mandap Design',      icon: '🌺' },
+    { src: '',         caption: 'Candle Arrangement', icon: '🕯️' },
+    { src: '',         caption: 'Table Centrepieces', icon: '🎀' },
+    { src: '',         caption: 'Entry Arch',         icon: '🪄' },
+  ]
+};
+
+/* ═══════════════════════════════════════════════════════════════════
+   VIDEO DATA
+   ───────────────────────────────────────────────────────────────────
+   YOUTUBE — paste the FULL YouTube URL or just the video ID:
+     { type:'youtube', src:'https://youtu.be/DVbLXjTNvrQ', title:'', desc:'' }
+     { type:'youtube', src:'https://www.youtube.com/watch?v=DVbLXjTNvrQ', title:'', desc:'' }
+     { type:'youtube', src:'DVbLXjTNvrQ', title:'', desc:'' }   ← just ID also works
+
+   INSTAGRAM — paste the full reel URL:
+     { type:'instagram', src:'https://www.instagram.com/reel/XXXX/', title:'', desc:'' }
+
+   YOUR OWN VIDEO FILE — put the video in the same folder:
+     { type:'own', src:'your-video.mp4', thumb:'thumb.jpg', title:'', desc:'' }
+     thumb is optional — leave '' if you have no thumbnail image
+═══════════════════════════════════════════════════════════════════ */
+const videoData = {
+  all: [
+    { type:'youtube',   src:'https://youtu.be/DVbLXjTNvrQ?si=V2ArEwIW1kfs6jv6', title:'Grand Wedding Highlights 2024',  desc:'A magical celebration in Tirupati — full ceremony, décor & catering.' },
+    { type:'youtube',   src:'',                                                    title:'Premium Reception Reel',         desc:'Stunning reception with light show, live counters & entertainment.' },
+    { type:'own',       src:'',       thumb:'',                                    title:'Our Events Showreel',            desc:'A montage of our finest events across Tirupati, Chittoor & Vellore.' },
+    { type:'instagram', src:'https://www.instagram.com/reel/DWyzeppFjDX/?igsh=bzltdW9pajhobTF1',                                                    title:'Instagram Reel — Floral Décor',  desc:'Watch our expert team create a stunning floral mandap from scratch.' },
+    { type:'instagram', src:'https://www.instagram.com/reel/DWyzeppFjDX/', title:'Instagram Reel — Floral Décor', desc:'Watch our expert team create a stunning floral mandap from scratch.' },
+    { type:'youtube',   src:'',                                                    title:'Birthday Bash — Theme Party',   desc:'A royal themed birthday celebration for 300 guests in Vellore.' },
+    { type:'youtube',   src:'',                                                    title:'Corporate Gala Night',           desc:'Annual awards night with stage, AV, and full catering service.' },
+  ],
+  wedding: [
+    { type:'youtube',   src:'',                                                    title:'Wedding Ceremony Highlights',   desc:'Traditional Telugu wedding with full floral mandap & catering.' },
+    { type:'youtube',   src:'',                                                    title:'4-Day Wedding Celebration',     desc:'Complete wedding series — mehendi, sangeet, ceremony & reception.' },
+    { type:'own',       src:'',       thumb:'',                                    title:'Bridal Entry Video',            desc:'Cinematic bridal entry with drone footage — Tirupati 2024.' },
+  ],
+  reception: [
+    { type:'youtube',   src:'',                                                    title:'Grand Reception — Vellore',    desc:'Premium reception with live entertainment & multi-cuisine buffet.' },
+    { type:'instagram', src:'',                                                    title:'Reception Stage Reel',          desc:'Behind the scenes: building our signature gold-themed reception stage.' },
+  ],
+  birthday: [
+    { type:'youtube',   src:'',                                                    title:'60th Birthday Gala',            desc:'A royal 60th birthday celebration with 400 guests in Chennai.' },
+    { type:'own',       src:'',       thumb:'',                                    title:'Kids Birthday Highlight',       desc:'Colourful themed birthday party with balloon décor & cake ceremony.' },
+  ],
+  corporate: [
+    { type:'youtube',   src:'',                                                    title:'Product Launch Event',          desc:'High-profile product launch at Vellore — stage, AV & catering.' },
+    { type:'youtube',   src:'',                                                    title:'Annual Awards Night',           desc:'Prestigious corporate awards night with 600 attendees.' },
+  ]
+};
+
+/* ═══════════════════════════════════════════════════════════════════
+   HELPER: Extract YouTube video ID from any YouTube URL format
+   Handles: youtu.be/ID, youtube.com/watch?v=ID, youtube.com/embed/ID
+   Also handles bare IDs (no URL) — just passes them through.
+═══════════════════════════════════════════════════════════════════ */
+function extractYouTubeId(src) {
+  if (!src) return '';
+  // Already a bare ID (11 chars, no slash or dot)
+  if (/^[a-zA-Z0-9_-]{11}$/.test(src.trim())) return src.trim();
+  // youtu.be/ID
+  var m = src.match(/youtu\.be\/([a-zA-Z0-9_-]{11})/);
+  if (m) return m[1];
+  // youtube.com/watch?v=ID or /embed/ID or /shorts/ID
+  m = src.match(/(?:v=|\/embed\/|\/shorts\/|\/v\/)([a-zA-Z0-9_-]{11})/);
+  if (m) return m[1];
+  return '';
+}
+
+/* ═══ GALLERY ENGINE ═══ */
+let lightboxImages = [];
+let lightboxIndex = 0;
+
+function buildGallery(cat) {
+  const items = galleryData[cat] || [];
+  lightboxImages = items;
+  const mount = document.getElementById('galleryMount');
+  const grid = document.createElement('div');
+  grid.className = 'gallery-grid';
+
+  items.forEach((item, i) => {
+    const div = document.createElement('div');
+    div.className = 'gallery-item';
+    div.setAttribute('data-index', i);
+    div.onclick = () => openLightbox(i);
+
+    if (item.src) {
+      const img = document.createElement('img');
+      img.src = item.src;
+      img.alt = item.caption;
+      img.loading = 'lazy';
+      div.appendChild(img);
+    } else {
+      const ph = document.createElement('div');
+      ph.className = 'gallery-placeholder';
+      ph.innerHTML = '<span class="icon">' + (item.icon || '🖼️') + '</span><p>' + item.caption + '</p>';
+      div.appendChild(ph);
+    }
+
+    const ov = document.createElement('div');
+    ov.className = 'gallery-overlay';
+    ov.innerHTML = '<span class="gallery-overlay-text">' + item.caption + '</span>';
+    div.appendChild(ov);
+
+    div.style.opacity = '0';
+    div.style.transform = 'translateY(18px)';
+    grid.appendChild(div);
+    setTimeout(() => {
+      div.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+      div.style.opacity = '1';
+      div.style.transform = 'translateY(0)';
+    }, i * 50);
+  });
+
+  mount.innerHTML = '';
+  mount.appendChild(grid);
+}
+
+function showCat(cat, btn) {
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  buildGallery(cat);
+}
+
+function openLightbox(index) {
+  lightboxIndex = index;
+  const item = lightboxImages[index];
+  if (!item || !item.src) return;
+  document.getElementById('lightboxImg').src = item.src;
+  document.getElementById('lightboxCaption').textContent = item.caption;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function lightboxNav(dir) {
+  const srcItems = lightboxImages.map((item, i) => ({...item, origIndex: i})).filter(i => i.src);
+  if (!srcItems.length) return;
+  const curPos = srcItems.findIndex(i => i.origIndex === lightboxIndex);
+  const newPos = (curPos + dir + srcItems.length) % srcItems.length;
+  openLightbox(srcItems[newPos].origIndex);
+}
+
+document.getElementById('lightbox').addEventListener('click', function(e) { if (e.target===this) closeLightbox(); });
+
+/* ═══ VIDEO ENGINE ═══ */
+function buildVideos(tab) {
+  const items = videoData[tab] || [];
+  const mount = document.getElementById('videoMount');
+  const grid = document.createElement('div');
+  grid.className = 'video-panel active';
+
+  items.forEach(video => {
+    const card = document.createElement('div');
+    card.className = 'video-card reveal';
+
+    let thumbHtml = '', badge = '', clickAction = '';
+
+    if (video.type === 'youtube') {
+      const ytId = extractYouTubeId(video.src);
+      badge = '<span class="video-badge yt">▶ YouTube</span>';
+      const thumbSrc = ytId ? 'https://img.youtube.com/vi/' + ytId + '/hqdefault.jpg' : '';
+      clickAction = "openVideoModal('youtube','" + ytId + "')";
+      thumbHtml = '<div class="video-thumb" onclick="' + clickAction + '">'
+        + (thumbSrc ? '<img src="' + thumbSrc + '" alt="' + video.title + '" loading="lazy">' : '<div class="video-thumb-placeholder"><span>▶</span></div>')
+        + '<div class="video-play-btn"><div class="video-play-icon">▶</div></div></div>';
+    } else if (video.type === 'instagram') {
+      badge = '<span class="video-badge ig">📷 Instagram</span>';
+      const igUrl = video.src || '';
+      // Instagram blocks iframe embeds — open directly in new tab
+      clickAction = igUrl ? "window.open('" + igUrl + "','_blank')" : "showToast('⚠️ No Instagram URL added yet.')";
+      thumbHtml = '<div class="video-thumb" onclick="' + clickAction + '" style="cursor:pointer;">'
+        + '<div class="video-thumb-placeholder" style="background:linear-gradient(135deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);"><span>📸</span><p style="font-family:Cinzel,serif;font-size:9px;letter-spacing:2px;color:rgba(255,255,255,0.8);margin-top:4px">INSTAGRAM REEL</p></div>'
+        + '<div class="video-play-btn"><div class="video-play-icon" style="background:linear-gradient(135deg,#833ab4,#e1306c,#fd1d1d);">▶</div></div></div>';
+    } else {
+      badge = '<span class="video-badge own">🎬 Our Video</span>';
+      clickAction = "openVideoModal('own','" + (video.src||'') + "')";
+      thumbHtml = '<div class="video-thumb" onclick="' + clickAction + '">'
+        + (video.thumb ? '<img src="' + video.thumb + '" alt="' + video.title + '" loading="lazy">' : '<div class="video-thumb-placeholder"><span>🎬</span></div>')
+        + '<div class="video-play-btn"><div class="video-play-icon">▶</div></div></div>';
+    }
+
+    card.innerHTML = thumbHtml
+      + '<div class="video-info">' + badge
+      + '<h4>' + video.title + '</h4>'
+      + '<p>' + video.desc + '</p></div>';
+
+    grid.appendChild(card);
+  });
+
+  mount.innerHTML = '';
+  mount.appendChild(grid);
+  grid.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+}
+
+function switchVideoTab(tab, btn) {
+  document.querySelectorAll('.video-tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  buildVideos(tab);
+}
+
+function openVideoModal(type, id) {
+  if (!id) { showToast('⚠️ No video source added yet — add a URL in videoData.'); return; }
+  const body = document.getElementById('videoModalBody');
+  if (type === 'youtube') {
+    const ytId = extractYouTubeId(id);
+    if (!ytId) { showToast('⚠️ Could not read YouTube ID from URL.'); return; }
+    body.innerHTML = '<iframe src="https://www.youtube.com/embed/' + ytId + '?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+  } else if (type === 'instagram') {
+    // Instagram blocks iframes — this path is no longer used (cards open directly)
+    window.open(id, '_blank');
+  } else {
+    body.innerHTML = '<video src="' + id + '" controls autoplay style="width:100%;height:100%;"></video>';
+  }
+  document.getElementById('videoModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal() {
+  document.getElementById('videoModalBody').innerHTML = '';
+  document.getElementById('videoModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('videoModal').addEventListener('click', function(e) { if (e.target===this) closeVideoModal(); });
+
+/* ═══ KEYBOARD ═══ */
+document.addEventListener('keydown', function(e) {
+  if (document.getElementById('lightbox').classList.contains('open')) {
+    if (e.key==='Escape') closeLightbox();
+    if (e.key==='ArrowLeft') lightboxNav(-1);
+    if (e.key==='ArrowRight') lightboxNav(1);
+  }
+  if (document.getElementById('videoModal').classList.contains('open')) {
+    if (e.key==='Escape') closeVideoModal();
+  }
+});
+
+/* ═══ NAVBAR ═══ */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+/* ═══ MOBILE NAV ═══ */
+function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); }
+function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
+
+/* ═══ PARTICLES ═══ */
+const pc = document.getElementById('particles');
+for (let i = 0; i < 30; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.left = Math.random() * 100 + '%';
+  p.style.top = Math.random() * 100 + '%';
+  p.style.setProperty('--dur', (6 + Math.random() * 8) + 's');
+  p.style.setProperty('--delay', (Math.random() * 6) + 's');
+  p.style.width = p.style.height = (1 + Math.random() * 3) + 'px';
+  pc.appendChild(p);
+}
+
+/* ═══ REVEAL ON SCROLL ═══ */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
+
+/* ═══ MENU TABS ═══ */
+function switchMenu(tab, btn) {
+  document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.menu-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('menu-' + tab).classList.add('active');
+  btn.classList.add('active');
+}
+
+/* ═══ FAQ ═══ */
+function toggleFaq(btn) {
+  const ans = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(q => { q.classList.remove('open'); q.nextElementSibling.classList.remove('open'); });
+  if (!isOpen) { btn.classList.add('open'); ans.classList.add('open'); }
+}
+
+/* ═══ PACKAGE ENQUIRY ═══ */
+function enquirePackage(pkg) {
+  document.getElementById('f-package').value = pkg + ' Package';
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  setTimeout(() => showToast('✨ ' + pkg + ' Package selected — fill the form below!'), 600);
+}
+
+/* ═══ WHATSAPP SUBMIT ═══ */
+function submitToWhatsApp() {
+  const name  = document.getElementById('f-name').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const event = document.getElementById('f-event').value;
+  const date  = document.getElementById('f-date').value;
+  const city  = document.getElementById('f-city').value;
+  const guests= document.getElementById('f-guests').value;
+  const pkg   = document.getElementById('f-package').value;
+  const msg   = document.getElementById('f-msg').value.trim();
+  if (!name || !phone || !event || !city) { showToast('⚠️ Please fill Name, Phone, Event Type & City'); return; }
+  const lines = ['🌟 *New Event Enquiry — Pakala Chetty Events*','',
+    '👤 *Name:* '+name,'📞 *Phone:* '+phone];
+  if (email) lines.push('✉️ *Email:* '+email);
+  lines.push('🎉 *Event Type:* '+event);
+  if (date) lines.push('📅 *Event Date:* '+date);
+  lines.push('📍 *City:* '+city);
+  if (guests) lines.push('👥 *Expected Guests:* '+guests);
+  if (pkg) lines.push('📦 *Package Interest:* '+pkg);
+  if (msg) lines.push('\n💬 *Details:*\n'+msg);
+  lines.push('','_Sent via Pakala Chetty Website_');
+  window.open('https://wa.me/919885788881?text='+encodeURIComponent(lines.join('\n')),'_blank');
+  showToast('✅ Opening WhatsApp...');
+}
+
+/* ═══ TOAST ═══ */
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3200);
+}
+
+/* ═══ COUNTER ANIMATION ═══ */
+function animateCounters() {
+  document.querySelectorAll('.stat-number').forEach(el => {
+    const raw = el.textContent;
+    const target = parseInt(raw);
+    if (isNaN(target)) return;
+    const suffix = raw.replace(/[0-9]/g, '');
+    let count = 0;
+    const step = target / 60;
+    const iv = setInterval(() => {
+      count = Math.min(count + step, target);
+      el.textContent = Math.floor(count) + suffix;
+      if (count >= target) clearInterval(iv);
+    }, 30);
+  });
+}
+const cObs = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) { animateCounters(); cObs.disconnect(); }
+}, { threshold: 0.5 });
+const statsEl = document.querySelector('.about-stats');
+if (statsEl) cObs.observe(statsEl);
+
+/* ═══ INIT ═══ */
+buildGallery('all');
+buildVideos('all');
+</script>
+</body>
+</html>
