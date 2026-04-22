@@ -18,7 +18,7 @@ img{max-width:100%;display:block}
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 60px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s}
 nav.scrolled{background:rgba(10,7,4,0.97);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,151,58,0.2)}
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
-.nav-logo-img{width:52px;height:52px;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 18px rgba(201,151,58,0.35);background:linear-gradient(135deg,var(--crimson),var(--crimson-light));display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:18px;font-weight:900;color:var(--gold);flex-shrink:0;overflow:hidden}
+.nav-logo-img{width:100px;height:100px;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 18px rgba(201,151,58,0.35);background:linear-gradient(135deg,var(--crimson),var(--crimson-light));display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:18px;font-weight:900;color:var(--gold);flex-shrink:0;overflow:hidden}
 .nav-logo-img img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .nav-logo-text{font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:2px;color:var(--gold-light);line-height:1.3}
 .nav-logo-text span{display:block;font-size:9px;letter-spacing:3px;color:var(--cream2);font-weight:400}
@@ -260,7 +260,7 @@ section{padding:110px 60px;position:relative}
 .contact-item-icon{width:42px;height:42px;flex-shrink:0;background:rgba(201,151,58,0.1);border:1px solid rgba(201,151,58,0.2);display:flex;align-items:center;justify-content:center;font-size:17px;transition:all 0.3s}
 .contact-item:hover .contact-item-icon{background:var(--gold)}
 .contact-item-text h4{font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:5px}
-.contact-item-text p,.contact-item-text a{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--cream2);text-decoration:none;line-height:1.65;transition:color 0.3s}
+.contact-item-text p,.contact-item-text a{font-family:'Cormorant ',serif;font-size:17px;color:var(--cream2);text-decoration:none;line-height:1.65;transition:color 0.3s}
 .contact-item-text a:hover{color:var(--gold)}
 .contact-form{display:flex;flex-direction:column;gap:13px}
 .form-group{display:flex;flex-direction:column;gap:7px}
@@ -369,7 +369,8 @@ footer{background:var(--dark);border-top:1px solid rgba(201,151,58,0.1);padding:
 
 <nav id="navbar">
   <a href="#hero" class="nav-logo">
-    <div class="nav-logo-img">PC</div>
+    <!-- <div class="nav-logo-img">PC</div> -->
+     <div class="nav-logo-img"><img src="logo.jpeg" alt="Pakala Chetty"></div>
     <div class="nav-logo-text">Pakala Chetty<span>Event Management</span></div>
   </a>
   <ul class="nav-links">
@@ -410,8 +411,9 @@ footer{background:var(--dark);border-top:1px solid rgba(201,151,58,0.1);padding:
     <div class="about-visual reveal-left">
       <div class="about-logo-display">
         <div class="about-logo-inner">
-          <div class="about-logo-pc">PC</div>
-          <div class="about-logo-name">Event Management</div>
+          <!-- <div class="about-logo-pc">PC</div>
+          <div class="about-logo-name">Event Management</div> -->
+          <img src="logo.jpeg" alt="Pakala Chetty Logo" style="width:190px;height:190px;object-fit:contain;border-radius:50%">
         </div>
       </div>
       <div class="about-stats">
@@ -703,7 +705,8 @@ footer{background:var(--dark);border-top:1px solid rgba(201,151,58,0.1);padding:
     <div class="footer-top">
       <div class="footer-brand">
         <div class="footer-logo-row">
-          <div class="footer-logo-circle">PC</div>
+          <!-- <div class="footer-logo-circle">PC</div> -->
+           <div class="footer-logo-circle"><img src="logo.jpeg" alt="PC" style="width:100%;height:100%;object-fit:cover;border-radius:50%"></div>
           <div class="footer-brand-name">Pakala Chetty<span>Event Management</span></div>
         </div>
         <p>Crafting extraordinary moments across Tirupati, Chittoor, Vellore & Tamil Nadu. Your celebration, our passion.</p>
